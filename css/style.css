@@ -1,0 +1,16 @@
+nav {
+    background-color: aliceblue;
+}
+
+nav > li {
+    list-style: none;
+    color: black;
+}
+
+nav > li > a {
+    text-decoration: none;
+}
+
+nav > li > a:hover {
+    color: aquamarine;
+}
