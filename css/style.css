@@ -37,7 +37,7 @@ main {
     padding: 5px;
 }
 
-.items-container {
+.items-container, .about, .contact-container, .newsletter, footer {
     display: flex;
 
 }
@@ -56,9 +56,17 @@ main {
 }
 
 .about {
-    display: flex;
+    
 }
 
 .about-sections {
     padding: 5px;
+}
+
+.contact-container {
+    background-color: aqua;
+}
+
+.newsletter {
+    flex-direction: column;
 }
