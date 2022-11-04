@@ -16,12 +16,49 @@ nav > li > a:hover {
     color: aquamarine;
 }
 
-main {
-    background-image: url(/images/mainbackground.jpg);
-    width: auto;
-    padding: 100px;
+h2 {
+    text-align: center;
 }
 
-.mini-desserts {
+.welcome {
+    color: aliceblue;
+}
 
+main {
+    background: url(/images/mainbackground.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 -100px;
+    width: auto;
+    padding: 150px;
+}
+
+.order-container {
+    background-color: azure;
+    padding: 5px;
+}
+
+.items-container {
+    display: flex;
+
+}
+
+.items {
+    width: 270px;
+    height: auto;
+    padding: 10px;
+    border: solid 2px #8c8c8c;
+    margin: 5px;
+}
+
+.mini-desserts, .bon-bons {
+    max-width: 100%;
+    height: auto;
+}
+
+.about {
+    display: flex;
+}
+
+.about-sections {
+    padding: 5px;
 }
