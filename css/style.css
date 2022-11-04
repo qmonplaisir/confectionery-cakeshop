@@ -1,5 +1,6 @@
 nav {
     background-color: aliceblue;
+    width: auto;
 }
 
 nav > li {
@@ -13,4 +14,14 @@ nav > li > a {
 
 nav > li > a:hover {
     color: aquamarine;
+}
+
+main {
+    background-image: url(/images/mainbackground.jpg);
+    width: auto;
+    padding: 100px;
+}
+
+.mini-desserts {
+
 }

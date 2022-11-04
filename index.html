@@ -13,7 +13,7 @@
 
     <nav>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Order</a></li>
+        <li><a href="#order">Order</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
      </nav>
@@ -21,7 +21,34 @@
 </header>
 
 <body>
+    <main>
+        <h1>
+            Welcome to Confectionery Cakeshop
+        </h1>
+        <p>We're so glad youre here. Confectionery is home to the most delicious confections like cakes, cupcakes, donuts, truffles, macarons, cookies, and mini desserts.
+            You name it, We have it. Checkout all we have to offer and try something for yourself to see what all the rave reviews are about.
+        </p>
+    </main>
 
+    <article id="order" class="order-container">
+        <h2>
+            Order your confections
+        </h2>
+        <div class="items-container">
+            <div class="mini-desserts-container">
+                <img href="/images/minidesserts.jpg" class="mini-desserts" alt="Mini Desserts">
+                <h3>Mini Desserts</h3>
+                <p>Mini desserts include layered tiramisu, chocolate peanut butter banana cake, and layered strawberry cheesecake.</p>
+                <button class="order-btn">Order here</button>
+            </div>
+            <div>
+                <img href="/images/bonbons.jpg" class="bon-bons" alt="Bon Bons">
+                <h3>Bon-Bons</h3>
+                <p>Choice of raspberry, strawberry, and lingonberry filling. Choice of milk, dark, and white chocolate coating. Choice of blue, yellow, and red color.</p>
+                <button class="order-btn">Order here</button>
+            </div>
+        </div>
+    </article>
     
     <script src="js/home.js"></script>
 </body>
