@@ -7,11 +7,54 @@
     
     <title>Confectionery Cakeshop</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+        .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        }
+
+        .fa:hover {
+        opacity: 0.7;
+        }
+
+        .fa-facebook {
+        background: #29326a;
+        font-size: 15px;
+        color: #f1f1f1;
+        width: 15px;
+        border-radius: 50%;
+        }
+
+        .fa-twitter {
+        background: #29326a;
+        font-size: 15px;
+        color: #f1f1f1;
+        width: 15px;
+        border-radius: 50%;
+        }
+
+        .fa-linkedin {
+        background: #29326a;
+        font-size: 15px;
+        color: #f1f1f1;
+        width: 15px;
+        border-radius: 50%;
+        }
+
+    </style>
 </head>
 
 <header>
 
     <nav>
+        <a href="#" alt="Home"><img src="/images/ConfectioneryLogo.png" class="logo" alt="Cofectionery CakeShop"></a>
         <li><a href="#">Home</a></li>
         <li><a href="#order">Order</a></li>
         <li><a href="#about">About</a></li>
@@ -152,6 +195,33 @@
             <li><a href="#contact">Contact</a></li>
         </nav>
 
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+
+                </iframe>
+                <a href="https://123movies-to.org">123movies</a>
+                <br>
+                <style>
+                    .mapouter {
+                        position:relative;
+                        text-align:right;
+                        height:300px;
+                        width:300px;
+                    }
+                </style>
+                <a href="https://www.embedgooglemap.net">google maps on my web site</a>
+                <style>
+                    .gmap_canvas {
+                        overflow:hidden;
+                        background:none!important;
+                        height:300px;
+                        width:300px;
+                    }
+                </style>
+            </div>
+        </div>
+        
         <div class="newsletter">
             <h3>
                 Sign up for our newsletter
@@ -166,9 +236,9 @@
             <h3>
                 Connect With Us
             </h3>
-            <a href="http://www.facebook.com">Facebook</a>
-            <a href="http://www.twitter.com">Twitter</a>
-            <a href="http://www.instagram.com">Instagram</a>
+            <a href="http://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+            <a href="http://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+            <a href="http://www.instagram.com" class="fa fa-linkedin" target="_blank"></a>
         </div>
     </footer>
     
