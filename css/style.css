@@ -1,35 +1,69 @@
 .logo {
-    width: 150px;
-    height: auto;
-    align-self: center;
+    background: url(/images/ConfectioneryCakeshopLogoandHoverstate.png) no-repeat;
+    display: block;
+    height: 605px;
+    width: 625px;
+    text-indent: -9999px;
 }
 
-header > nav {
-    background-color: aliceblue;
+.logo:hover, .logo:focus {
+    background-position: 0 -615px;
+}
+
+.header-nav {
+    background-color: #ffffff;
     width: auto;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: right;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    text-transform: uppercase;
+    font-size: larger;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-nav > li {
+header > nav > ul {
     list-style: none;
-    color: black;
-    padding: 5px;
-    margin: 5px;
+    justify-content: right;
+    display: flex;
+    font-weight: bolder;
+    padding-inline-start: 100px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
-nav > li > a {
+header > nav > ul > li {
+    padding: 15px;
+}
+
+nav > ul > li > a {
     text-decoration: none;
+    color: #1EAFBE;
+    background-color: #ffffff;
 }
 
-nav > li > a:hover {
-    color: aquamarine;
+nav > ul > li > a, nav > ul > li > a:hover {
+    padding: 1rem;
+}
+
+nav > ul > li > a:hover {
+    color: #ffffff;
+    background-color: #F19DA9;
 }
 
 h2 {
     text-align: center;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .welcome {
@@ -42,6 +76,7 @@ main {
     background-position: 0 -100px;
     width: auto;
     padding: 150px;
+    margin-top: 605px;
 }
 
 .order-container {
@@ -103,6 +138,15 @@ footer {
 
 .footer-nav {
     flex-direction: column;
+    list-style: none;
+}
+
+footer > nav > li > a {
+    text-decoration: none;
+}
+
+footer > nav > li > a:hover {
+    color: aquamarine;
 }
 
 .newsletter {

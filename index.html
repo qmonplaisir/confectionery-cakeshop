@@ -8,6 +8,9 @@
     <title>Confectionery Cakeshop</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
     <style>
 
@@ -53,13 +56,15 @@
 
 <header>
 
-    <nav>
-        <a href="#" alt="Home"><img src="/images/ConfectioneryLogo.png" class="logo" alt="Cofectionery CakeShop"></a>
-        <li><a href="#">Home</a></li>
-        <li><a href="#order">Order</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-     </nav>
+    <nav class="header-nav">
+        <a href="#" alt="Confectionery Cakeshop" class="logo">Confectionery Cakeshop</a>
+        <ul>
+            <li><a href="#" class=".navli">Home</a></li>
+            <li><a href="#order" class=".navli">Order</a></li>
+            <li><a href="#about" class=".navli">About</a></li>
+            <li><a href="#contact" class=".navli">Contact</a></li>
+        </ul>
+    </nav>
 
 </header>
 
@@ -79,31 +84,31 @@
         </h2>
         <div class="items-container">
             <div class="items mini-desserts-container">
-                <img src="/images/minidesserts.jpg" class="mini-desserts" alt="Mini Desserts">
+                <img src="images/minidesserts.jpg" class="mini-desserts" alt="Mini Desserts">
                 <h3>Mini Desserts</h3>
                 <p>Mini desserts include layered tiramisu, chocolate peanut butter banana cake, and layered strawberry cheesecake.</p>
                 <button class="order-btn">Order here</button>
             </div>
             <div class="items bon-bons-container">
-                <img src="/images/bonbons.jpg" class="bon-bons" alt="Bon Bons">
+                <img src="images/bonbons.jpg" class="bon-bons" alt="Bon Bons">
                 <h3>Bon-Bons</h3>
                 <p>Choice of raspberry, strawberry, and lingonberry filling. Choice of milk, dark, and white chocolate coating. Choice of blue, yellow, and red color.</p>
                 <button class="order-btn">Order here</button>
             </div>
             <div class="items donuts-container">
-                <img src="/images/bonbons.jpg" class="bon-bons" alt="Bon Bons">
+                <img src="images/bonbons.jpg" class="bon-bons" alt="Bon Bons">
                 <h3>Donuts</h3>
                 <p>Choice of raspberry, strawberry, and lingonberry filling. Choice of milk, dark, and white chocolate coating. Choice of blue, yellow, and red color.</p>
                 <button class="order-btn">Order here</button>
             </div>
             <div class="items truffles-container">
-                <img src="/images/bonbons.jpg" class="bon-bons" alt="Bon Bons">
+                <img src="images/bonbons.jpg" class="bon-bons" alt="Bon Bons">
                 <h3>Truffles</h3>
                 <p>Choice of raspberry, strawberry, and lingonberry filling. Choice of milk, dark, and white chocolate coating. Choice of blue, yellow, and red color.</p>
                 <button class="order-btn">Order here</button>
             </div>
             <div class="items cupcakes-container">
-                <img src="/images/bonbons.jpg" class="bon-bons" alt="Bon Bons">
+                <img src="images/bonbons.jpg" class="bon-bons" alt="Bon Bons">
                 <h3>Cupckaes</h3>
                 <p>Choice of raspberry, strawberry, and lingonberry filling. Choice of milk, dark, and white chocolate coating. Choice of blue, yellow, and red color.</p>
                 <button class="order-btn">Order here</button>
@@ -115,7 +120,7 @@
         <h2>
             About Confectionery Cakeshop
         </h2>
-        <img src="/images/Headshot.png" class="headshot" alt="Owner Headshot">
+        <img src="images/Headshot.png" class="headshot" alt="Owner Headshot">
         <div class="about">
             <div class="about-sections">
                 <h3>
@@ -188,6 +193,8 @@
     </article>
 
     <footer>
+       <h2>Where to find us</h2>
+       
         <nav class="footer-nav">
             <li><a href="#">Home</a></li>
             <li><a href="#order">Order</a></li>
