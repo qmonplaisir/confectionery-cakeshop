@@ -157,85 +157,101 @@
             </div> 
         </div>
     </article>
-
-    <h2 class="contact">
-        Get in Touch With Us
-    </h2>
+   
+        <h2 class="contact">
+            Get in Touch With Us
+        </h2>
     <article id="contact" class="contact-container">
+       
         <p>
-            Click the button below for our contact form. For all custom cake inquiries please fill out the contact form and you will be contacted with the nexts steps.
-            <button id="contactFormBTN" class="btn">Contact Form</button>
+            *PLEASE READ* for all of our custom cake inquiries please use our contact form and we will respond to you as soon as possible
+            with the next steps in your cake ordering process. Please make sure to include the date the cake is needed, serving size, and theme you are considering.
+            The contact form can also be used for all other inquiries as well. make sure to select your inquiry type. To access the contact form please click on the contact form button.
         </p>
 
+        <label for="contactFormBTN" class="btn contactformbtn">Contact Form</label>
+        <input type="checkbox" id="contactFormBTN">
         <div id="contactDIV" class="contact">
-            <p>Name</p><input>
-            <p>Phone Number</p><input>
-            <p>E-mail</p><input>
-            <p>Inquiriy Type</p><input>
-            <p>Message</p><textarea></textarea><br>
-            <button type="submit" class="btn">Submit</button>
+            <form class="contactForm">
+                <label class="contactlabel">Name</label><br><input type="text" placeholder="Full Name" class="Contactinput" required>
+                <br><label class="contactlabel">Phone Number</label><br><input type="tel" placeholder="Phone Number" class="Contactinput" required>
+                <br><label class="contactlabel">E-mail</label><br><input type="email" placeholder="Email" class="Contactinput" required>
+                <br><label class="contactlabel">Inquiriy Type</label>
+                    <br> <input list="reasons" placeholder="Inquiriy Type" class="Contactinput" required>
+                        <datalist id="reasons">
+                            <option value="Custom Cake Inquiry"></option>
+                            <option value="General Question"></option>
+                            <option value="Collaborate With Us"></option>
+                            <option value="Join Our Team"></option>
+                            <option value="Other"></option>
+                        </datalist>
+                <br><label class="contactlabel">Message</label><br><textarea name="Message" rows="1" cols="20" class="Contactinput" placeholder="Type your heart out" required></textarea><br>
+                <button type="submit" class="btn">Submit</button>
+            </form>
         </div>
     </article>
 
     <footer>
        
-       
-        <nav class="footer-nav">
-            <h2>Where to find us</h2>
-            <ul class="footer-nav-list">
-                <li class="footer-nav-list-elements"><a href="#" class="footer-nav-links">Home</a></li>
-                <li class="footer-nav-list-elements"><a href="#order" class="footer-nav-links">Order</a></li>
-                <li class="footer-nav-list-elements"><a href="#about" class="footer-nav-links">About</a></li>
-                <li class="footer-nav-list-elements"><a href="#contact" class="footer-nav-links">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <h2>Where to find us</h2>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-list-elements"><a href="#" class="footer-nav-links">Home</a></li>
+                    <li class="footer-nav-list-elements"><a href="#order" class="footer-nav-links">Order</a></li>
+                    <li class="footer-nav-list-elements"><a href="#about" class="footer-nav-links">About</a></li>
+                    <li class="footer-nav-list-elements"><a href="#contact" class="footer-nav-links">Contact</a></li>
+                </ul>
+            </nav>
 
-        <div class="map">
-            <p>2880 Broadway New York, NY 10025</p>
-            <div class="mapouter">
-                <div class="gmap_canvas">
-                    <iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            <div class="map">
+                <p>2880 Broadway New York, NY 10025</p>
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 
-                    </iframe>
-                    <style>
-                        .mapouter {
-                            position:relative;
-                            text-align:right;
-                            height:300px;
-                            width:300px;
-                        }
-                    </style>
-                    <a href="https://www.embedgooglemap.net">google maps on my web site</a>
-                    <style>
-                        .gmap_canvas {
-                            overflow:hidden;
-                            background:none!important;
-                            height:300px;
-                            width:300px;
-                        }
-                    </style>
+                        </iframe>
+                        <style>
+                            .mapouter {
+                                position:relative;
+                                text-align:right;
+                                height:300px;
+                                width:300px;
+                            }
+                        </style>
+                        <a href="https://www.embedgooglemap.net">google maps on my web site</a>
+                        <style>
+                            .gmap_canvas {
+                                overflow:hidden;
+                                background:none!important;
+                                height:300px;
+                                width:300px;
+                            }
+                        </style>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="newsletter">
-            <h3>
-                Sign up for our newsletter
-            </h3>
-            <label>
-                Enter your email to receive 10% off and stay up to date <br> with Confectionery Cakeshop news.
-            </label>
-            <input type="email" name="email" placeholder="Email" class="email"> <button type="submit" class="btn">Submit</button>
-        </div>
+            
+            <div class="newsletter">
+                <h3>
+                    Sign up for our newsletter
+                </h3>
+                <label>
+                    Enter your email to receive 10% off and stay up to date <br> with Confectionery Cakeshop news.
+                </label>
+                <input type="email" name="email" placeholder="Email" class="email"> <button type="submit" class="btn">Submit</button>
+            </div>
 
-        <div class="socials">
-            <h3>
-                Connect With Us
-            </h3>
-            <a href="http://www.facebook.com" class="fa fa-facebook" target="_blank" aria-label="Facebook"></a>
-            <a href="http://www.twitter.com" class="fa fa-twitter" target="_blank" aria-label="Twitter"></a>
-            <a href="http://www.instagram.com" class="fa fa-linkedin" target="_blank" aria-label="Instagram"></a>
+            <div class="socials">
+                <h3>
+                    Connect With Us
+                </h3>
+                <a href="http://www.facebook.com" class="fa fa-facebook" target="_blank" aria-label="Facebook"></a>
+                <a href="http://www.twitter.com" class="fa fa-twitter" target="_blank" aria-label="Twitter"></a>
+                <a href="http://www.instagram.com" class="fa fa-linkedin" target="_blank" aria-label="Instagram"></a>
+            </div>
         </div>
+        <p class="copyright">&copy; 2022 Confectionery Cakeshop, All Rights Reserved</p>
     </footer>
     
     <script src="js/home.js"></script>

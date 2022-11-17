@@ -4,17 +4,17 @@ body{
 }
 
 .logo {
-    background: url(/images/ConfectioneryCakeshopLogoandHoverstate.png) no-repeat;
+    background: url(/images/ConfectioneryLogoandHoverstate.png) no-repeat;
     display: block;
-    height: 153px;
-    width: 158px;
+    height: 82px;
+    width: 280px;
     text-indent: -9999px;
     overflow: hidden;
     margin: 5px;
 }
 
 .logo:hover, .logo:focus {
-    background-position: 0 -155px;
+    background-position: 0 -85px;
 }
 
 .header-nav {
@@ -90,9 +90,8 @@ main {
     background: url(/images/mainbackground.jpg) no-repeat;
     background-size: cover;
     background-position: 0 -100px;
-    width: auto;
     padding: 150px;
-    margin-top: 163px;
+    margin-top: 92px;
 }
 
 .order-container {
@@ -123,11 +122,10 @@ main {
     background-color: #FFFFFF;
     color: #1EAFBE;
     font-family: 'Josefin Sans', sans-serif;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 10px;
     border: none;
     border-radius: 5px;
-    font-size: larger;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -145,13 +143,29 @@ main {
 
 .contact-container {
     background-color: #ffffff;
-    text-align: center;
+    text-align: left;
+    padding: 0 2rem 2rem 2rem;
     color: #29326a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
-.contact {
-    
+.contactlabel {
+    text-transform: uppercase;
 }
+
+/*
+.contactinput {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0.5rem;
+    margin: 5px;
+    border-radius: 3px;
+    font-size: larger;
+    border: none;
+}
+*/
 
 #contactDIV {
     width: 100%;
@@ -159,17 +173,22 @@ main {
     text-align: center;
     background-color: lightblue;
     margin-top: 20px;
+    display: none;
 }
 
-/*
-.contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
+#contactFormBTN {
+    display: none;
 }
-*/
-footer {
+
+#contactFormBTN:checked ~ #contactDIV {
+    display: block;
+}
+
+.contact {
+    color: #29326a;
+}
+
+.footer-container {
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
@@ -178,6 +197,16 @@ footer {
 footer, .footer-nav {
     background-color: #1EAFBE;
     color: #29326a;
+}
+
+footer {
+    background-color: #1EAFBE;
+    padding: 3px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: smaller;
 }
 
 .socials, .newsletter, .mapouter, .footer-nav, .map {
@@ -226,12 +255,11 @@ footer, .footer-nav {
     padding: 10px;
 }
 
-.email {
+.email, .Contactinput {
     padding: 0.5rem;
     margin: 5px;
     font-family: 'Josefin Sans', sans-serif;
     border-radius: 3px;
-    font-size: larger;
     border: none;
 }
 
