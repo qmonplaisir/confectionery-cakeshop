@@ -6,14 +6,15 @@ body{
 .logo {
     background: url(/images/ConfectioneryCakeshopLogoandHoverstate.png) no-repeat;
     display: block;
-    height: 302px;
-    width: 320px;
+    height: 153px;
+    width: 158px;
     text-indent: -9999px;
     overflow: hidden;
+    margin: 5px;
 }
 
 .logo:hover, .logo:focus {
-    background-position: 0 -307px;
+    background-position: 0 -155px;
 }
 
 .header-nav {
@@ -91,7 +92,7 @@ main {
     background-position: 0 -100px;
     width: auto;
     padding: 150px;
-    margin-top: 302px;
+    margin-top: 163px;
 }
 
 .order-container {
