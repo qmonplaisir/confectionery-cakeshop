@@ -24,30 +24,31 @@
         }
 
         .fa:hover {
-        opacity: 0.7;
+        color: #FFFFFF;
+        background-color: #F19DA9;
         }
 
         .fa-facebook {
-        background: #29326a;
-        font-size: 15px;
-        color: #f1f1f1;
-        width: 15px;
+        background: #FFFFFF;
+        font-size: 25px;
+        color: #1EAFBE;
+        width: 25px;
         border-radius: 50%;
         }
 
         .fa-twitter {
-        background: #29326a;
-        font-size: 15px;
-        color: #f1f1f1;
-        width: 15px;
+        background: #FFFFFF;
+        font-size: 25px;
+        color: #1EAFBE;
+        width: 25px;
         border-radius: 50%;
         }
 
         .fa-linkedin {
-        background: #29326a;
-        font-size: 15px;
-        color: #f1f1f1;
-        width: 15px;
+        background: #FFFFFF;
+        font-size: 25px;
+        color: #1EAFBE;
+        width: 25px;
         border-radius: 50%;
         }
 
@@ -58,7 +59,7 @@
 
     <nav class="header-nav">
         <a href="#" alt="Confectionery Cakeshop" class="logo">Confectionery Cakeshop</a>
-        <ul>
+        <ul class="main-nav">
             <li><a href="#" class=".navli">Home</a></li>
             <li><a href="#order" class=".navli">Order</a></li>
             <li><a href="#about" class=".navli">About</a></li>
@@ -70,12 +71,14 @@
 
 <body>
     <main id="welcome">
-        <h1 class="welcome">
-            Welcome to Confectionery Cakeshop
-        </h1>
-        <p class="welcome">We're so glad youre here. Confectionery is home to the most delicious confections like cakes, cupcakes, <br> donuts, truffles, macarons, cookies, and mini desserts.
-            You name it, We have it. Checkout all we have to <br> offer and try something for yourself to see what all the rave reviews are about.
-        </p>
+        <div class="welcome-content">
+            <h1 class="welcome">
+                Welcome to Confectionery Cakeshop
+            </h1>
+            <p class="welcome">We're so glad youre here. Confectionery is home to the most delicious confections like cakes, cupcakes, <br> donuts, truffles, macarons, cookies, and mini desserts.
+                You name it, We have it. Checkout all we have to <br> offer and try something for yourself to see what all the rave reviews are about.
+            </p>
+        </div>
     </main>
 
     <article id="order" class="order-container">
@@ -120,7 +123,7 @@
         <h2>
             About Confectionery Cakeshop
         </h2>
-        <img src="images/Headshot.png" class="headshot" alt="Owner Headshot">
+        <img class="headshot" alt="Owner Headshot">
         <div class="about">
             <div class="about-sections">
                 <h3>
@@ -155,77 +158,63 @@
         </div>
     </article>
 
+    <h2 class="contact">
+        Get in Touch With Us
+    </h2>
     <article id="contact" class="contact-container">
-        <h2>
-            Get in Touch With Us
-        </h2>
-    
-        <div class="contact">
-            <div class="contact-sections">
-                <h3>
-                    Our History
-                </h3>
-                <p>
-                    Cupcake ipsum dolor sit amet shortbread toffee. 
-                    Marshmallow tiramisu gingerbread sugar plum tootsie roll dragée cookie donut lemon drops. 
-                    Jelly sweet gingerbread gingerbread cake jujubes cupcake topping.
-                </p>
-            </div>
-            <div class="countact-sections">   
-                <h3>
-                    Core Values
-                </h3>
-                <p>
-                    Dragée cupcake cheesecake cupcake gingerbread pastry. Halvah brownie jelly jelly-o brownie apple pie chupa chups. 
-                    Tiramisu cookie oat cake apple pie marshmallow chocolate bar cheesecake lollipop. 
-                    Tart sesame snaps candy carrot cake chocolate bar apple pie croissant gummies.
-                </p>
-            </div> 
-            <div class="contact-sections">
-                <h3>
-                    FAQs
-                </h3>
-                <p>
-                    For all custome cake inquiries please fill out the contact form and you will be contacted with the nexts steps.
-                </p>
-            </div> 
+        <p>
+            Click the button below for our contact form. For all custom cake inquiries please fill out the contact form and you will be contacted with the nexts steps.
+            <button id="contactFormBTN" class="btn">Contact Form</button>
+        </p>
+
+        <div id="contactDIV" class="contact">
+            <p>Name</p><input>
+            <p>Phone Number</p><input>
+            <p>E-mail</p><input>
+            <p>Inquiriy Type</p><input>
+            <p>Message</p><textarea></textarea><br>
+            <button type="submit" class="btn">Submit</button>
         </div>
     </article>
 
     <footer>
-       <h2>Where to find us</h2>
+       
        
         <nav class="footer-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#order">Order</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <h2>Where to find us</h2>
+            <ul class="footer-nav-list">
+                <li class="footer-nav-list-elements"><a href="#" class="footer-nav-links">Home</a></li>
+                <li class="footer-nav-list-elements"><a href="#order" class="footer-nav-links">Order</a></li>
+                <li class="footer-nav-list-elements"><a href="#about" class="footer-nav-links">About</a></li>
+                <li class="footer-nav-list-elements"><a href="#contact" class="footer-nav-links">Contact</a></li>
+            </ul>
         </nav>
 
-        <div class="mapouter">
-            <div class="gmap_canvas">
-                <iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        <div class="map">
+            <p>2880 Broadway New York, NY 10025</p>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 
-                </iframe>
-                <a href="https://123movies-to.org">123movies</a>
-                <br>
-                <style>
-                    .mapouter {
-                        position:relative;
-                        text-align:right;
-                        height:300px;
-                        width:300px;
-                    }
-                </style>
-                <a href="https://www.embedgooglemap.net">google maps on my web site</a>
-                <style>
-                    .gmap_canvas {
-                        overflow:hidden;
-                        background:none!important;
-                        height:300px;
-                        width:300px;
-                    }
-                </style>
+                    </iframe>
+                    <style>
+                        .mapouter {
+                            position:relative;
+                            text-align:right;
+                            height:300px;
+                            width:300px;
+                        }
+                    </style>
+                    <a href="https://www.embedgooglemap.net">google maps on my web site</a>
+                    <style>
+                        .gmap_canvas {
+                            overflow:hidden;
+                            background:none!important;
+                            height:300px;
+                            width:300px;
+                        }
+                    </style>
+                </div>
             </div>
         </div>
         
@@ -234,18 +223,18 @@
                 Sign up for our newsletter
             </h3>
             <label>
-                Enter your email to receive 10% off and stay up to date with Confectionery Cakeshop news.
+                Enter your email to receive 10% off and stay up to date <br> with Confectionery Cakeshop news.
             </label>
-            <input type="email" name="email" placeholder="Email"> <button type="submit">Submit</button>
+            <input type="email" name="email" placeholder="Email" class="email"> <button type="submit" class="btn">Submit</button>
         </div>
 
         <div class="socials">
             <h3>
                 Connect With Us
             </h3>
-            <a href="http://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
-            <a href="http://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
-            <a href="http://www.instagram.com" class="fa fa-linkedin" target="_blank"></a>
+            <a href="http://www.facebook.com" class="fa fa-facebook" target="_blank" aria-label="Facebook"></a>
+            <a href="http://www.twitter.com" class="fa fa-twitter" target="_blank" aria-label="Twitter"></a>
+            <a href="http://www.instagram.com" class="fa fa-linkedin" target="_blank" aria-label="Instagram"></a>
         </div>
     </footer>
     
