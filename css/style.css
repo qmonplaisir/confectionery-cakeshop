@@ -3,6 +3,42 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.toggle {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 92px;
+}
+
+.toggle span {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #1EAFBE;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.toggle span:nth-child(1) {
+    transform: translateY(-15px);
+}
+
+.toggle span:nth-child(2) {
+    transform: translateY(15px);
+}
+
+.toggle span:nth-child(3) {
+    transform: translateX(60px);
+}
+
+
 .logo {
     background: url(/images/ConfectioneryLogoandHoverstate.png) no-repeat;
     display: block;
@@ -38,8 +74,8 @@ body{
     justify-content: right;
     display: flex;
     font-weight: bolder;
-    padding-inline-start: 100px;
-    margin-block-start: 1em;
+    padding-inline-start: 1px;
+    margin-block-start: 1rem;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
