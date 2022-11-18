@@ -55,26 +55,49 @@
     </style>
 </head>
 
-<header>
-    <div class="toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <nav class="header-nav">
-        <a href="#" alt="Confectionery Cakeshop" class="logo">Confectionery Cakeshop</a>
-        <ul class="main-nav">
-            <li><a href="#" class=".navli">Home</a></li>
-            <li><a href="#order" class=".navli">Order</a></li>
-            <li><a href="#about" class=".navli">About</a></li>
-            <li><a href="#contact" class=".navli">Contact</a></li>
-        </ul>
-    </nav>
-
-</header>
-
 <body>
+    <header>
+        
+        <!-- <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> -->
+        
+
+        <nav class="header-nav">
+            <a href="#" alt="Confectionery Cakeshop" class="logo">Confectionery Cakeshop</a>
+            
+            <ul class="main-nav">
+                <li><a href="#" class=".navli">Home</a></li>
+                <li><a href="#order" class=".navli">Order</a></li>
+                <li><a href="#about" class=".navli">About</a></li>
+                <li><a href="#contact" class=".navli">Contact</a></li>
+            </ul>
+        </nav>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <img src="images/TransparentConfectioneryLogo.png" class="roundlogo" alt="Confectionery Cakeshop">
+        <a href="#">Home</a>
+        <a href="#order">Order</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        </div>
+    
+    </div>
+    
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span onclick="openNav()">&#9776;</span>
+
+    </header>
+
+
     <main id="welcome">
         <div class="welcome-content">
             <h1 class="welcome">

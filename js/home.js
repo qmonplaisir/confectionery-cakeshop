@@ -1,5 +1,17 @@
-const menuToggle = document.querySelector(selectors:'.toggle')
+/*const menuToggle = document.querySelector('.toggle')
 
-menuToggle.addEventListener(type:'click', listener: () =>{
-menuToggle.classList.toggle(token:'active')
+
+menuToggle.addEventListener('click', 
+function listener() {
+    menuToggle.classList.toggle('active')
 })
+*/
+/* Open */
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  
+  /* Close */
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }

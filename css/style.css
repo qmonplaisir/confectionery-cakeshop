@@ -3,6 +3,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+  /*
 .toggle {
     position: relative;
     width: 70px;
@@ -15,7 +16,27 @@ body{
     align-items: center;
     cursor: pointer;
     margin-top: 92px;
+    overflow: hidden;
 }
+
+ .active {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #1EAFBE;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.active:nth-child(1) {
+    transform: translateY(-15px);
+}
+.active:nth-child(2) {
+    transform: translateY(15px);
+}
+.active:nth-child(3) {
+    transform: translateX(60px);
+}
+
 
 .toggle span {
     position: absolute;
@@ -30,14 +51,24 @@ body{
     transform: translateY(-15px);
 }
 
+.toggle.active span:nth-child(1) {
+    transform: translateY(0px) rotate(45deg);
+    transition-delay: 0.125s;
+}
+
 .toggle span:nth-child(2) {
     transform: translateY(15px);
 }
 
-.toggle span:nth-child(3) {
-    transform: translateX(60px);
+.toggle.active span:nth-child(2) {
+    transform: translateY(0px) rotate(315deg);
+    transition-delay: 0.25s;
 }
 
+.toggle.active span:nth-child(3) {
+    transform: translateX(60px);
+}
+*/
 
 .logo {
     background: url(/images/ConfectioneryLogoandHoverstate.png) no-repeat;
@@ -308,6 +339,111 @@ footer {
     
 }
 
-@media screen {
+@media screen and (max-width: 800px) {
+
+body {
+    width: auto;
+}
+
+    header span {
+        position: fixed;
+        color: #1EAFBE;
+        top: 10px;
+        right: 0;
+        background-color: #FFFFFF;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        font-size: 2em;
+    }
+
+    .roundlogo {
+        width: 9em;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.95);
+        overflow-y: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #1EAFBE;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #F19DA9;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .overlay {overflow-y: auto;}
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+        .roundlogo {
+            width: 5em;
+            height: auto;
+        }
+      }
     
+    .main-nav {
+        display: none;
+    }
+
+    main {
+        margin-top: auto;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-nav, .footer-nav-list {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact-container, .footer-container, .order-container, .socials, .newsletter, .mapouter, .footer-nav, .map {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-container, .socials, .newsletter, .mapouter, .footer-nav, .map{
+        justify-content: center;
+        align-items: center;
+    }
 }
