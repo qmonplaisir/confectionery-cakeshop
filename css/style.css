@@ -194,8 +194,8 @@ main {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #ffffff;
+    color: #1EAFBE;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -203,35 +203,43 @@ main {
     border: none;
     outline: none;
     transition: 0.4s;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: lightblue;
   }
   
 .accordion:after {
     content: '\002B';
-    color: #777;
+    color: #1EAFBE;
     font-weight: bold;
     float: right;
     margin-left: 5px;
+    font-size: large;
   }
   
 .active:after {
-    content: "\2212";
+    content: '\2212';
     float: right;
-  margin-left: 5px;
+    margin-left: 5px;
+    color: #1EAFBE;
+    font-size: large;
+    font-weight: bold;
   }
 
   /* Style the accordion panel. Note: hidden by default */
   .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: #1EAFBE;
+    color: #FFFFFF;
     max-height: 0;
-    display: none;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    font-family: 'Josefin Sans', sans-serif;
   }
 
 #contact {
